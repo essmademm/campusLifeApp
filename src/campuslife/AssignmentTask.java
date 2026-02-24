@@ -1,7 +1,6 @@
 package campuslife;
 
 public class AssignmentTask {
-
     private String title;
     private course course;
     private int hours;
@@ -45,10 +44,8 @@ public class AssignmentTask {
     }
 
     public String toString() {
-        return "asignmentTask '" + title +
-                "', course='" + course.getName() +
-                "', estHours=" + hours +
-                ", dueIn=" + dayUntilDue +
+        return "asignmentTask '" + title + "', course='" + course.getName() +
+                "', estHours=" + hours + ", dueIn=" + dayUntilDue +
                 ", completed=" + completed + "}";
     }
 }

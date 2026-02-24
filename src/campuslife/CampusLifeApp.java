@@ -11,6 +11,7 @@ public class CampusLifeApp {
 
         ArrayList<course> courses = new ArrayList<>();
         courses.add(pl);
+
         courses.add(turkish);
         courses.add(english);
 
@@ -25,6 +26,7 @@ public class CampusLifeApp {
 
         ArrayList<StudySession> sessions = new ArrayList<>();
         sessions.add(new StudySession(pl, 120));
+
         sessions.add(new StudySession(pl, 110));
         sessions.add(new StudySession(turkish, 90));
         sessions.add(new StudySession(english, 100));
@@ -45,7 +47,6 @@ public class CampusLifeApp {
             }
         }
 
-
         int remainingHours = 0;
         for (AssignmentTask t : tasks) {
             if (!t.isCompleted()) {
@@ -65,7 +66,6 @@ public class CampusLifeApp {
             }
             System.out.println(c.getName() + ": " + total + " hours");
         }
-
 
         tasks.get(0).markCompleted();
         System.out.println("\ncompleted task:");
