@@ -6,7 +6,7 @@ public class ExamPreparation extends PlanItem {
         super(title, daysUntil, estimatedHours);
     }
 
-    // Exams are urgent earlier
+
     public boolean isUrgent() {
         return daysUntil <= 5 && !completed;
     }

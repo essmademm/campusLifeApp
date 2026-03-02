@@ -34,12 +34,11 @@ public class PlanItem {
         completed = true;
     }
 
-    // Default urgency (can be changed by subclasses)
     public boolean isUrgent() {
         return daysUntil <= 2 && !completed;
     }
 
-    // Type of item (changed by subclasses)
+
     public String getType() {
         return "Plan Item";
     }

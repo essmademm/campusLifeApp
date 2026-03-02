@@ -6,7 +6,7 @@ public class ClubEvent extends PlanItem {
         super(title, daysUntil, estimatedHours);
     }
 
-    // Club events are not urgent in the same way
+
     public boolean isUrgent() {
         return false;
     }
